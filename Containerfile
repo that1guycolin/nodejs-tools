@@ -20,5 +20,3 @@ RUN npm install -g \
     prettier-plugin-yaml@1.2.0 \
     vscode-langservers-extracted@4.10.0 \
     yaml-language-server@1.24.0
-
-CMD ["sleep", "infinity"]
