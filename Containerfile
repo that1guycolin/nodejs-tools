@@ -4,6 +4,7 @@ FROM node:26-slim
 RUN apt-get update && apt-get install -y --no-install-recommends \
     bash=5.2.37-2+b9 \
     fish=4.0.2-1 \
+    shellcheck=0.10.0-1 \
     && rm -rf /var/lib/apt/lists/*
 
 # Install the tools
