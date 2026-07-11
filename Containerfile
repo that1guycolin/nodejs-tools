@@ -1,6 +1,7 @@
 FROM node:26-slim
 
 # Install fish & ensure bash up-to-date (their respective lang-servers appreciate it)
+# Shellcheck necessary for bash-language-server to work
 RUN apt-get update && apt-get install -y --no-install-recommends \
     bash=5.2.37-2+b9 \
     fish=4.0.2-1 \
