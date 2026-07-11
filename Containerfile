@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Install the tools
 RUN npm install -g \
+    --allow-scripts=core-js \
     bash-language-server@5.6.0 \
     @microsoft/compose-language-service@.5.0 \
     eslint@10.6.0 \
@@ -18,5 +19,7 @@ RUN npm install -g \
     prettier@3.9.5 \
     prettier-plugin-glsl@0.3.0 \
     prettier-plugin-yaml@1.2.0 \
+    typescript@7.0.2 \
+    typescript-language-server@5.3.0\
     vscode-langservers-extracted@4.10.0 \
     yaml-language-server@1.24.0
